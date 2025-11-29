@@ -7,7 +7,7 @@ keybinds {
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
         bind "Alt f" { ToggleFloatingPanes; }
-        bind "Alt n" { NewPane; }
+        bind "Alt n" { NewTab; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
         bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
         bind "Alt j" "Alt Down" { MoveFocus "Down"; }
@@ -317,13 +317,13 @@ default_shell "fish"
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-// theme "default"
+theme "catppuccin-mocha"
 
 // The name of the default layout to load on startup
 // Default: "default"
 // (Requires restart)
 //
-// default_layout "compact"
+default_layout "compact"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
