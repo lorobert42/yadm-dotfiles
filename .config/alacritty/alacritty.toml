@@ -1,5 +1,6 @@
 [window]
 decorations = "None"
+padding = { x = 10, y = 10 }
 
 [terminal]
 shell = "/usr/bin/fish"
