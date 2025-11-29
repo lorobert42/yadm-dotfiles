@@ -1,1 +1,23 @@
-/nix/store/wgrm219p2vqrc7v1ai81w3gi9aqcfwv1-home-manager-files/.config/helix/config.toml
+theme = "catppuccin_mocha"
+[editor]
+bufferline = "multiple"
+default-line-ending = "lf"
+line-number = "relative"
+popup-border = "all"
+true-color = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "bar"
+
+[editor.indent-guides]
+character = "┆"
+render = true
+skip-levels = 1
+
+[keys.insert]
+C-s = ["normal_mode", ":w"]
+
+[keys.normal]
+C-r = ":reload"
+C-s = ":w"

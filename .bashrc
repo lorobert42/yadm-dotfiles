@@ -1,1 +1,5 @@
-/nix/store/wgrm219p2vqrc7v1ai81w3gi9aqcfwv1-home-manager-files/.bashrc
+if [[ $(ps --no-header --pid=$PPID --format=comm) != "fish" && -z ${BASH_EXECUTION_STRING} && ${SHLVL} == 1 ]]
+then
+	shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=''
+	exec fish $LOGIN_OPTION
+fi

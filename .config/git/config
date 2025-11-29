@@ -1,1 +1,6 @@
-/nix/store/wgrm219p2vqrc7v1ai81w3gi9aqcfwv1-home-manager-files/.config/git/config
+[init]
+	defaultBranch = "main"
+
+[user]
+	email = "lorobert@student.42lausanne.ch"
+	name = "lorobert"
